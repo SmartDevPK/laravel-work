@@ -1,12 +1,3 @@
-<x-header title="Latest Article $ Emmanuel Michael" />
-
-
-<div>
-    {{-- @isset($posts) --}}
-    {{-- @foreach ($posts as $post) --}}
-    <x-blog.blogitem post="$post" />
-    {{-- @endforeach --}}
-    {{-- @else --}}
-    {{-- <p>No posts available.</p> --}}
-    {{-- @endisset --}}
-</div>
+<x-layout.contact name="name" placeholder="Name..." />
+<x-layout.contact name="email" placeholder="Email..." />
+<x-layout.contact name="subject" placeholder="Subject..." />!
