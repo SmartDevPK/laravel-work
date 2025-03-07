@@ -13,8 +13,11 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::view("/", "home");
+Route::get("/", function () {
+    return view('layout.index');
+});
 
-Route::get("/products", [ProductController::class, "index"])
 
-    ->name("product.index");
+Route::get("/contact", function () {
+    return view("layout.contact");
+});

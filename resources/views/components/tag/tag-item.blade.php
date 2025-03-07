@@ -1,0 +1,1 @@
+<x-tag.tag-item :tag="name" />
